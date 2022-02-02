@@ -146,6 +146,20 @@ this is STILL A WORK IN PROGRESS**
     </tr>
     <tr>
         <td>
+            <img src="/assets/imgs/oring.png" width="128" /><br/>
+        </td>
+        <td>
+            O-ring<br/>
+            <code>
+            8mm ID, 2mm thick
+            </code>
+        </td>
+        <td>
+            60x O-ring for passive wheels
+        </td>
+    </tr>
+    <tr>
+        <td>
             <img src="/assets/imgs/frame.png" width="128" /><br/>
         </td>
         <td>
