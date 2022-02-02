@@ -89,6 +89,17 @@ this is STILL A WORK IN PROGRESS**
     </tr>
     <tr>
         <td>
+            <img src="/assets/imgs/jst-zh-cable.png" width="128" /><br/>
+        </td>
+        <td>
+            Motor cables
+        </td>
+        <td>
+            3x JST-ZH cables, 6 pins, length: 5cm
+        </td>
+    </tr>
+    <tr>
+        <td>
             <img src="/assets/imgs/hc-05.png" width="128" /><br/>
         </td>
         <td>
