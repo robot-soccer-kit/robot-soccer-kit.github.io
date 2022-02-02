@@ -7,10 +7,12 @@ permalink: /coordinates-field-markers
 
 # Coordinates and markers
 
-* [Field](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field.pdf)
-* [Field corner markers](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-markers.pdf)
-* [Green team markers](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/green-markers.pdf)
-* [Blue team markers](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/blue-markers.pdf)
+Download PDFs:
+
+* [Full field (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field.pdf)
+* [Field corner markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-markers.pdf)
+* [Green team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/green-markers.pdf)
+* [Blue team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/blue-markers.pdf)
 
 ### Coordinates
 
