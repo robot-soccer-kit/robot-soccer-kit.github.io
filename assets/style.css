@@ -201,6 +201,18 @@ a {
 }
 
 h3 {
-    font-size:110%;
+    font-size:90%;
     font-weight:bold;
+    margin-top:15px;
+}
+
+h2 {
+    margin-top:15px;
+}
+
+.page-content h3:before {
+    content:"__ ";
+    color:#fbb;
+    font-family: sans;
+    font-family: 'Sriracha', cursive;
 }
