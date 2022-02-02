@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/bootstrap.min.css?v=HEAD" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/rouge.highlight.css?v=HEAD" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/style.css?v=HEAD" media="screen" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> 
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Game controller and programming | Robot Soccer Kit</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Game controller and programming" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Robot Soccer Kit documentation" />
+<meta property="og:description" content="Robot Soccer Kit documentation" />
+<link rel="canonical" href="http://localhost:4000/game-controller-and-programming/" />
+<meta property="og:url" content="http://localhost:4000/game-controller-and-programming/" />
+<meta property="og:site_name" content="Robot Soccer Kit" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Game controller and programming" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/game-controller-and-programming/","headline":"Game controller and programming","description":"Robot Soccer Kit documentation","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav text-light">
+      <div class="container nav-container container-small">
+        
+      <!-- Site logo -->
+      <a class="navbar-brand" href="/">
+        <img width="24" src="/assets/imgs/logo.png" />
+        Robot Soccer Kit
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100">
+        </ul>
+        <div>
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit" class="button text-light">GitHub <small>repository</small></a>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+    <div class="container pt-2 container-small content body-container">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            Game controller and programming
+          </h1>
+          <span class="text-muted"></span>
+          
+          
+          
+          <hr/>
+          <div class="page-content page-post">
+            <h2 id="install">Install</h2>
+
+<ul>
+  <li><a href="/install-windows">Install and setup on Windows</a></li>
+  <li><a href="/install-linux">Install and setup on Linux</a></li>
+</ul>
+
+<h2 id="game-controller">Game controller</h2>
+
+<h3 id="starting">Starting</h3>
+
+<p>Once you’ve installed the Python package, paired the robots and the camera, you can start the game controller. You
+should see such a message appearing:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[INFO] 2022-02-02 15:49:54,117 - robot-soccer-kit - Starting robot-soccer-kit Game Controller
+[INFO] 2022-02-02 15:49:54,119 - waitress - Serving on http://127.0.0.1:7070
+</code></pre></div></div>
+
+<p>Meaning that the game controller is now running and serving at a local web server on port 7070. If it is not already
+opened, a browser should appear with the game controller’s interface:</p>
+
+<div class="text-center">
+    <img src="/assets/imgs/game_controller.png" />
+</div>
+
+<h3 id="configuring-vision">Configuring vision</h3>
+
+<p>To configure the vision, first select your camera in the list. If you plug/unplug new cameras while the software is
+running, press “Refresh cameras” button.</p>
+
+<p>Once you’ve selected the camera, click “Start” to start the capture.</p>
+
+<p>You can adjust several parameters vision using the interface. The image will be annotated with the output from the
+detection.</p>
+
+<p>For good games quality, you should aim at reaching about 30 FPS for detection.</p>
+
+<h3 id="configuring-robots">Configuring robots</h3>
+
+<p>First, add your COM ports in the manager and just wait to check if the robots are responding. When they do, they emit
+a small beep and their battery level becomes available in the interface.</p>
+
+<p>You can then assign them the corresponding marker, or alternatively click the “Identify” button that will get them
+moving a little bit to auto-assign the markers to them.</p>
+
+<h3 id="allowing-api-control">Allowing API control</h3>
+
+<p>In the “Control” tab, you can allow or disallow the control of robots through API/clients (see below). By default, the
+control boxes are ticked, allowing the control for both teams.</p>
+
+<p>If you fill the “key” field with a value, it will become a key (a password) required by the teams that want to control
+their robots (preventing teams to control opponent robots).</p>
+
+<p>If you press the “emergency” button, all the robots will stop moving, and the control boxes will be un-ticked
+automatically to prevent the clients to send some controls for the robot.</p>
+
+<h2 id="programming">Programming</h2>
+
+<h3 id="getting-started">Getting started</h3>
+
+<p>Here is simple example creating a client for the API and getting the robot green1 kicking:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">rsk</span>
+
+<span class="k">with</span> <span class="n">rsk</span><span class="p">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">green1</span><span class="p">.</span><span class="n">kick</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Here:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">import rsk</code> imports the relevant Python package</li>
+  <li>The <code class="language-plaintext highlighter-rouge">with</code> statement ensures that the client will be properly closed at the end of the session.
+Especially, it forces the robots to stop moving at the end of the program.</li>
+  <li><code class="language-plaintext highlighter-rouge">client.green1.kick()</code> asks the robot <code class="language-plaintext highlighter-rouge">green1</code> to kick</li>
+</ul>
+
+<p>When creating a client, you can also provide the following arguments:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">rsk</span>
+
+<span class="k">with</span> <span class="n">rsk</span><span class="p">.</span><span class="n">Client</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">'127.0.0.1'</span><span class="p">,</span> 
+                <span class="n">key</span><span class="o">=</span><span class="s">''</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">robots</span><span class="p">[</span><span class="s">'green'</span><span class="p">][</span><span class="mi">1</span><span class="p">].</span><span class="n">kick</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<p>Where</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">host</code> is the IP address of the computer running the Game Controller</li>
+  <li><code class="language-plaintext highlighter-rouge">key</code> is the team access key (by default, blank) that can be set in the Game Controller to prevent a team from
+controlling opponents robots</li>
+</ul>
+
+<h3 id="accessing-robots">Accessing robots</h3>
+
+<p>Robots can be accessing using the following syntax:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Shortcuts to access a robot
+</span><span class="n">client</span><span class="p">.</span><span class="n">green1</span>
+<span class="n">client</span><span class="p">.</span><span class="n">green2</span>
+<span class="n">client</span><span class="p">.</span><span class="n">blue1</span>
+<span class="n">client</span><span class="p">.</span><span class="n">blue2</span>
+
+<span class="c1"># Full syntax allowing dynamic access
+</span><span class="n">client</span><span class="p">.</span><span class="n">robots</span><span class="p">[</span><span class="s">'green'</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">client</span><span class="p">.</span><span class="n">robots</span><span class="p">[</span><span class="s">'green'</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">client</span><span class="p">.</span><span class="n">robots</span><span class="p">[</span><span class="s">'blue'</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">client</span><span class="p">.</span><span class="n">robots</span><span class="p">[</span><span class="s">'blue'</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="localization-informations">Localization informations</h3>
+
+<p>Localization is polled using a thread and can be continuously accessed through the following variables:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Robot position (x [m], y [m]):
+</span><span class="n">client</span><span class="p">.</span><span class="n">green1</span><span class="p">.</span><span class="n">position</span>
+<span class="c1"># Robot orientation (theta [rad]):
+</span><span class="n">client</span><span class="p">.</span><span class="n">green1</span><span class="p">.</span><span class="n">orientation</span>
+<span class="c1"># Position + orientation (x [m], y [m], theta [rad])
+</span><span class="n">client</span><span class="p">.</span><span class="n">green1</span><span class="p">.</span><span class="n">pose</span>
+<span class="c1"># Ball's position (x [m], y [m])
+</span><span class="n">client</span><span class="p">.</span><span class="n">ball</span>
+</code></pre></div></div>
+
+<p>The field frame is detailed in the <a href="/coordinates-field-markers">coordinates and markers</a> section</p>
+
+<p>Note: arrays are <em>numpy array</em></p>
+
+<h3 id="controlling-the-robots">Controlling the robots</h3>
+
+<h4 id="basic-commands">Basic commands</h4>
+
+<p>To control the robots, you can use the following functions:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Kicks, takes an optional power parameter between 0 and 1
+</span><span class="n">robot</span><span class="p">.</span><span class="n">kick</span><span class="p">()</span>
+
+<span class="c1"># Controls the robots in its own frame, arguments are x speed [m/s],
+# y speed [m/s] and rotation speed [rad/s]
+</span>
+<span class="c1"># Go forward, 0.25 m/s
+</span><span class="n">robot</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
+
+<span class="c1"># Rotates 30 deg/s counter-clockwise
+</span><span class="n">robot</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="n">math</span><span class="p">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h4 id="goto">Goto</h4>
+
+<p>You can also use the <code class="language-plaintext highlighter-rouge">goto</code> method to send the robot to an arbitrary position on the field:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">robot</span><span class="p">.</span><span class="n">goto</span><span class="p">((</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Sends the robot to the position <code class="language-plaintext highlighter-rouge">x=0.2</code>, <code class="language-plaintext highlighter-rouge">y=0.5</code> and <code class="language-plaintext highlighter-rouge">theta=1.2</code> on the field.</p>
+
+<p>The second argument of <code class="language-plaintext highlighter-rouge">goto</code> is a <em>boolean</em> (<code class="language-plaintext highlighter-rouge">wait</code>, default <code class="language-plaintext highlighter-rouge">True</code>). When <code class="language-plaintext highlighter-rouge">wait</code> is <code class="language-plaintext highlighter-rouge">True</code>, the call to <code class="language-plaintext highlighter-rouge">goto</code> will
+block the execution of the program until the robot reaches its destination. When <code class="language-plaintext highlighter-rouge">wait</code> is <code class="language-plaintext highlighter-rouge">False</code>, the
+<code class="language-plaintext highlighter-rouge">goto</code> call will return immediately, after updating the instant velocity of the controlled robot, and return
+<code class="language-plaintext highlighter-rouge">True</code> if the robot reached, <code class="language-plaintext highlighter-rouge">False</code> else.</p>
+
+          </div>
+        </section>
+      </div>
+      <hr/>
+      <div class="container footer">
+        <a href="">
+          <img src="/assets/imgs/github.png" />
+          Robot Soccer Kit
+        </a>
+      </div>
+    </div>
+
+
+    
+
+
+    <script type="text/javascript" async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script type="text/javascript" src="/assets/jquery.min.js?v=HEAD"></script>
+    <script type="text/javascript" src="/assets/bootstrap.min.js?v=HEAD"></script>
+    <script type="text/javascript" src="/assets/headings-links.js?v=HEAD"></script>
+  </body>
+</html>

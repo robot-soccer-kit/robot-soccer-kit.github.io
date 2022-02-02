@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/bootstrap.min.css?v=HEAD" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/rouge.highlight.css?v=HEAD" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/style.css?v=HEAD" media="screen" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> 
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Linux installation and setup | Robot Soccer Kit</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Linux installation and setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Robot Soccer Kit documentation" />
+<meta property="og:description" content="Robot Soccer Kit documentation" />
+<link rel="canonical" href="http://localhost:4000/install-linux/" />
+<meta property="og:url" content="http://localhost:4000/install-linux/" />
+<meta property="og:site_name" content="Robot Soccer Kit" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linux installation and setup" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/install-linux/","headline":"Linux installation and setup","description":"Robot Soccer Kit documentation","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav text-light">
+      <div class="container nav-container container-small">
+        
+      <!-- Site logo -->
+      <a class="navbar-brand" href="/">
+        <img width="24" src="/assets/imgs/logo.png" />
+        Robot Soccer Kit
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100">
+        </ul>
+        <div>
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit" class="button text-light">GitHub <small>repository</small></a>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+    <div class="container pt-2 container-small content body-container">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            Linux installation and setup
+          </h1>
+          <span class="text-muted"></span>
+          
+          
+          
+          <hr/>
+          <div class="page-content page-post">
+            <h2 id="installing-python">Installing Python</h2>
+
+<p>Use the following command to install python3 and pip packages manager:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>python3 python3-pip
+</code></pre></div></div>
+
+<h2 id="installing-robot-soccer-kit-package">Installing <code class="language-plaintext highlighter-rouge">robot-soccer-kit</code> package</h2>
+
+<p>If you want to install only the client, run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Client only</span>
+pip <span class="nb">install</span> <span class="nt">-U</span> robot-soccer-kit
+</code></pre></div></div>
+
+<p>If you also want the game controller:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Full (with game controller)</span>
+pip <span class="nb">install</span> <span class="nt">-U</span> robot-soccer-kit[gc]
+</code></pre></div></div>
+
+<h2 id="running-the-game-controller">Running the Game Controller</h2>
+
+<p>To run the game controller: enter the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> rsk.game_controller
+</code></pre></div></div>
+
+<h2 id="pairing-the-robots">Pairing the robots</h2>
+
+<p>We provide some scripts in <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/tree/master/bluetooth">the repository</a>.</p>
+
+<h3 id="installing-rtl-drivers">Installing RTL drivers</h3>
+
+<p>We recommend using USB external <a href="https://www.amazon.fr/gp/product/B08SC9M9K3/">ZEXMTE Bluetooth adapter</a>. On Linux,
+it required you to install RTL driver:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Requires root privilege</span>
+./bluetooth/install-rtl-driver.sh
+</code></pre></div></div>
+
+<h3 id="pairing-process">Pairing process</h3>
+
+<p>To pair the robots, you can run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./bluetooth/pair.sh
+</code></pre></div></div>
+
+<p>Then, wait for your robots to be detected.</p>
+
+<p><em>Note: default bluetooth PIN for robots is always 1234</em></p>
+
+<h3 id="mounting-the-robots">Mounting the robots</h3>
+
+<p>Once you paired your robots, you can run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./bluetooth/mount.sh
+</code></pre></div></div>
+
+<p>To mount them all as <code class="language-plaintext highlighter-rouge">/dev/rfcomm*</code> devices</p>
+
+<h3 id="removing-robots">Removing robots</h3>
+
+<p>If you want to clean up your paired devices, you can use:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./bluetooth/remove-all.sh
+</code></pre></div></div>
+
+<p>To remove all paired devices.</p>
+
+<h2 id="camera">Camera</h2>
+
+<p>Simply plug the camera on your computer’s USB, it should work natively.</p>
+
+          </div>
+        </section>
+      </div>
+      <hr/>
+      <div class="container footer">
+        <a href="">
+          <img src="/assets/imgs/github.png" />
+          Robot Soccer Kit
+        </a>
+      </div>
+    </div>
+
+
+    
+
+
+    <script type="text/javascript" async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script type="text/javascript" src="/assets/jquery.min.js?v=HEAD"></script>
+    <script type="text/javascript" src="/assets/bootstrap.min.js?v=HEAD"></script>
+    <script type="text/javascript" src="/assets/headings-links.js?v=HEAD"></script>
+  </body>
+</html>

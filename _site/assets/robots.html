@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/bootstrap.min.css?v=HEAD" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/rouge.highlight.css?v=HEAD" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/style.css?v=HEAD" media="screen" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> 
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Robots | Robot Soccer Kit</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Robots" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Robot Soccer Kit documentation" />
+<meta property="og:description" content="Robot Soccer Kit documentation" />
+<link rel="canonical" href="http://localhost:4000/assets/robots.html" />
+<meta property="og:url" content="http://localhost:4000/assets/robots.html" />
+<meta property="og:site_name" content="Robot Soccer Kit" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Robots" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/assets/robots.html","headline":"Robots","description":"Robot Soccer Kit documentation","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav text-light">
+      <div class="container nav-container container-small">
+        
+      <!-- Site logo -->
+      <a class="navbar-brand" href="/">
+        <img width="24" src="/assets/imgs/logo.png" />
+        Robot Soccer Kit
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100">
+        </ul>
+        <div>
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit" class="button text-light">GitHub <small>repository</small></a>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+    <div class="container pt-2 container-small content body-container">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            Robots
+          </h1>
+          <span class="text-muted"></span>
+          
+          
+          
+          <hr/>
+          <div class="page-content page-post">
+            <h1 id="robots">Robots</h1>
+
+<p><strong>Disclaimer: robots used in Robot Soccer Kit are a fork of a previous project (holo). Current prototypes
+were hacked to add a kicker. In the future, this kicker will be integrated in the robot itself,
+this is STILL A WORK IN PROGRESS</strong></p>
+
+<p><img src="/docs/imgs/robots.jpg" alt="Holo" /></p>
+
+<p><a href="https://cad.onshape.com/documents/c5fe05581d14c59bfb08f79e/w/a8cb82e3a358c0b06e1cbf91/e/f45372d8263c18466905bd9b?renderMode=0&amp;uiState=616d8b41f463de7ef1eedc0f">The full robot CAD can be found here (OnShape)</a></p>
+
+<h2 id="structure">Structure</h2>
+
+<ul>
+  <li>Structural screws
+    <ul>
+      <li>6x M3x35</li>
+      <li>6x M3x10 female-female spacer</li>
+      <li>6x M3x8 female-male spacer</li>
+      <li>6x M3x15 female-male spacer</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="wheels">Wheels</h2>
+
+<p><a href="https://cad.onshape.com/documents/beccbfab729802507eb805eb/w/eea13ac7371464cd172aefcf/e/76e58097a54be25b6c68caca?renderMode=0&amp;uiState=616d8c2f00cc7207a3c8ae7b">Wheel CAD 3D design</a></p>
+
+<ul>
+  <li>Bearings are V623ZZ, V shape 3x12x4mm</li>
+  <li>O-rings, ID 8mm, 2mm thickness</li>
+  <li>M3x6 cylindrical shaft</li>
+  <li>Screws &amp; nuts
+    <ul>
+      <li>18x M3x8 screws</li>
+      <li>18x M3 nuts</li>
+      <li>9x M3x8 screws</li>
+      <li>9x M3 square nuts</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="pcb">PCB</h2>
+
+<p>Robot PCB can be found in the <a href="/electronics/">/electronics/</a> directory of this repository.</p>
+
+<h2 id="motors">Motors</h2>
+
+<p><img src="/docs/imgs/n20.png" alt="GA12-N20" /></p>
+
+<ul>
+  <li>Reference: GA12-N20</li>
+  <li>Hall encoder</li>
+  <li>Reduction ratio 1:210, metal gears</li>
+  <li>Connector: 6-pin JST-ZH</li>
+</ul>
+
+<p>The current reduction trade-off offers a high torque and the speed of the robots are thus limited.
+This is however not an issue in adversarial game where precision counts more than velocity.</p>
+
+<h2 id="bluetooth-communication">Bluetooth communication</h2>
+
+<p><img src="/docs/imgs/hc-05.png" alt="HC-05" /></p>
+
+<p>HC-05 modules are soldered on the robot PCB and allowing Bluetooth to on-board UART communication.</p>
+
+<h2 id="kicker">Kicker</h2>
+
+<p><img src="/docs/imgs/kicker.png" alt="Kicker" /></p>
+
+<h3 id="pcb-1">PCB</h3>
+
+<p>Kicker PCB can be found in the <a href="/electronics/kicker">/electronics/kicker</a> directory of this repository.</p>
+
+<p>It features MT3608 step-up converter to load a bank of capacitors that can then be unloaded in the
+solenoid.</p>
+
+<h3 id="solenoid">Solenoid</h3>
+
+<p><img src="/docs/imgs/solenoid.png" alt="Solenoid" /></p>
+
+<ul>
+  <li>6V JF-0530B</li>
+</ul>
+
+<h3 id="operating">Operating</h3>
+
+<p><img src="/docs/imgs/kicker_pcb.png" alt="Kicker" /></p>
+
+<p>The kicker is stepping up input voltage to approximate 20V to charge a bank of capacitors (9x 470uF rated
+for 25V).</p>
+
+<p>Thanks to a MOSFET transistor, the capacitors can be discharged directly in the solenoid, triggering the kicker.</p>
+
+<p>The duration of the pulse in the MOSFET allows to control the power of the kick.</p>
+
+          </div>
+        </section>
+      </div>
+      <hr/>
+      <div class="container footer">
+        <a href="">
+          <img src="/assets/imgs/github.png" />
+          Robot Soccer Kit
+        </a>
+      </div>
+    </div>
+
+
+    
+
+
+    <script type="text/javascript" async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script type="text/javascript" src="/assets/jquery.min.js?v=HEAD"></script>
+    <script type="text/javascript" src="/assets/bootstrap.min.js?v=HEAD"></script>
+    <script type="text/javascript" src="/assets/headings-links.js?v=HEAD"></script>
+  </body>
+</html>
