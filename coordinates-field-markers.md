@@ -27,6 +27,11 @@ In the second case, this is where they are placed:
     <img src="/assets/imgs/field-markers-explain.png" />
 </div>
 
+<div class="alert alert-warning m-2">
+    The field material can be anything, but we strongly recommend that you use thick carpet. If you don't, the ball will
+    not be stopped enough and the game experiences will be very poor.
+</div>
+
 ### Coordinates
 
 The field coordinates are the following:
@@ -92,8 +97,3 @@ of 8 cm. The PDF provided previously are 1:1 scale. The ArUco ids are:
 </div>
 
 For the ball, we use orange gold ball in PU (foam) material
-
-## Field
-
-The field material can be anything, but we strongly recommend that you use thick carpet. If you don't, the ball will
-not be stopped enough and the game experiences will be very poor.

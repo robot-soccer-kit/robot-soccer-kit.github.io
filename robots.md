@@ -1,5 +1,5 @@
 ---
-title: Robots
+title: Robots design and electronics
 layout: default
 mathjax: true
 permalink: /robots/
