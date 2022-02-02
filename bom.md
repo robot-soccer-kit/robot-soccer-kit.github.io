@@ -180,6 +180,8 @@ Below is the list of items for one robot:
         </td>
         <td>
             The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/marker.dxf">marker</a> can be cut in 3mm MDF or PMMA
+            <br/>
+            Then, print the relevant <a href="/coordinates-field-markers">markers</a> and stick them on it.
         </td>
     </tr>
     <tr>
