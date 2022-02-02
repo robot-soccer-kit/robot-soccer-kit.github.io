@@ -55,32 +55,28 @@ You can find the PCB on the [/electronics](https://github.com/robot-soccer-kit/r
 
 ## Motors
 
-<div class="row">
-    <div class="col-sm-3">
-        <img src="/assets/imgs/n20.png" />
-    </div>
-    <div class="col-sm-9">
-        <b>Reference</b>: GA12-N20<br/>
-        <b>Hall encoder</b><br/>
-        <b>Reduction ratio</b> 1:210, metal gears<br/>
-        <b>Connector</b>: 6-pin JST-ZH<br/>
-        <br/>
-        The current reduction trade-off offers a high torque and the speed of the robots are thus limited.
-        This is however not an issue in adversarial game where precision counts more than velocity.
-    </div>
+<div class="text-center">
+    <img src="/assets/imgs/n20.png" />
+<div>
+<b>Reference</b>: GA12-N20<br/>
+<b>Hall encoder</b><br/>
+<b>Reduction ratio</b> 1:210, metal gears<br/>
+<b>Connector</b>: 6-pin JST-ZH<br/>
+<br/>
+The current reduction trade-off offers a high torque and the speed of the robots are thus limited.
+This is however not an issue in adversarial game where precision counts more than velocity.
 </div>
+</div>
+
 
 
 ## Bluetooth communication
 
-<div class="row">
-    <div class="col-sm-3">
-        <img src="/assets/imgs/hc-05.png" />
-    </div>
-    <div class="col-sm-9">
-        HC-05 modules are soldered on the robot PCB and allowing Bluetooth to on-board UART communication.
-    </div>
+<div class="text-center">
+    <img src="/assets/imgs/hc-05.png" />
 </div>
+
+HC-05 modules are soldered on the robot PCB and allowing Bluetooth to on-board UART communication.
 
 ## Kicker
 
@@ -98,13 +94,11 @@ solenoid.
 
 ### Solenoid
 
-<div class="row">
-    <div class="col-sm-3">
-        <img src="/assets/imgs/solenoid.png" />
-    </div>
-    <div class="col-sm-9">
-        The solenoid is a <b>6V JF-0530B</b>, it is a small plunger that can be sourced from many online
-        stores.
+<div class="text-center">
+    <img src="/assets/imgs/solenoid.png" />
+    <div>
+    The solenoid is a <b>6V JF-0530B</b>, it is a small plunger that can be sourced from many online
+    stores.
     </div>
 </div>
 
