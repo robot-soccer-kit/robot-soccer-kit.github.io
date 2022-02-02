@@ -5,16 +5,14 @@ mathjax: true
 permalink: /coordinates-field-markers
 ---
 
-# Coordinates and markers
-
-Download PDFs:
+## PDFs
 
 * [Full field (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field.pdf)
 * [Field corner markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-markers.pdf)
 * [Green team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/green-markers.pdf)
 * [Blue team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/blue-markers.pdf)
 
-### Coordinates
+## Coordinates
 
 The field coordinates are the following:
 
