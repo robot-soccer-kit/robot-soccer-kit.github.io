@@ -28,8 +28,7 @@ When creating a client, you can also provide the following arguments:
 ```python
 import rsk
 
-with rsk.Client(host='127.0.0.1', 
-                key='') as client:
+with rsk.Client(host='127.0.0.1', key='') as client:
     client.robots['green'][1].kick()
 
 ```
