@@ -182,9 +182,9 @@ Below is the list of items for one robot:
             Marker
         </td>
         <td>
-            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/marker.dxf">marker</a> can be cut in 3mm MDF or PMMA
+            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/marker.dxf">marker part</a> can be cut in 3mm MDF or PMMA
             <br/>
-            Then, print the relevant <a href="/coordinates-field-markers">markers</a> and stick them on it.
+            Then, print the relevant <a href="/coordinates-field-markers#robots">robot markers</a> and stick them on it.
         </td>
     </tr>
     <tr>
