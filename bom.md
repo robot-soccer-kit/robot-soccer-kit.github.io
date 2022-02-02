@@ -1,27 +1,15 @@
 ---
-title: Robots design and electronics
+title: Bill of materials
 layout: default
 mathjax: true
-permalink: /robots/
+permalink: /bom
 ---
 
 **Disclaimer: robots used in Robot Soccer Kit are a fork of a previous project (holo). Current prototypes
 were hacked to add a kicker. In the future, this kicker will be integrated in the robot itself,
 this is STILL A WORK IN PROGRESS**
 
-<div class="text-center">
-    <img src="/assets/imgs/robots.jpg" />
-</div>
-
-<div class="alert alert-secondary m-3 text-center">
-    <img src="/assets/imgs/onshape.png" width="32" />
-
-    <a target="_blank" href="https://cad.onshape.com/documents/c5fe05581d14c59bfb08f79e/w/a8cb82e3a358c0b06e1cbf91/e/f45372d8263c18466905bd9b?renderMode=0&uiState=616d8b41f463de7ef1eedc0f">
-        The full robot CAD can be found here (OnShape)
-    </a>
-</div>
-
-## Items
+## Robot
 
 <table class="table table-striped table-responsive">
     <tr>
@@ -242,3 +230,7 @@ this is STILL A WORK IN PROGRESS**
         </td>
     </tr>
 </table>
+
+## Setup
+
+TODO
