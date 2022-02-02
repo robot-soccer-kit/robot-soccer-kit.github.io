@@ -208,4 +208,26 @@ this is STILL A WORK IN PROGRESS**
             </ul>
         </td>
     </tr>
+    <tr>
+        <td>
+            <img src="/assets/imgs/18650.png" width="128" /><br/>
+        </td>
+        <td>
+            <kbd>18650 VT6</kbd>
+        </td>
+        <td>
+            2x 18650 batteries
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="/assets/imgs/holder.png" width="128" /><br/>
+        </td>
+        <td>
+            2x18650 holder
+        </td>
+        <td>
+            Holder for 2 18650 batteries with jack output
+        </td>
+    </tr>
 </table>
