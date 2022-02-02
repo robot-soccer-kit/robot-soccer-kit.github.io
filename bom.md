@@ -51,8 +51,11 @@ Below is the list of items for one robot:
                 <li>6x M3x35</li>
                 <li>6x M3x10 female-female spacer</li>
                 <li>6x M3x8 female-male spacer</li>
-                <li>6x M3x20 female-male spacer</li>
+                <li>6x M3x15 female-male spacer</li>
+                <li>12x M3 nuts</li>
             </ul>
+            Here, M3 nuts are used on the top of M3x15 spacers so that the spacer is both longer and doesn't
+            damage the marker sheet after getting through the 3mm of that part.
         </td>
     </tr>
     <tr>
