@@ -10,7 +10,7 @@ permalink: /bom
     evolving, do not try to build this for now
 </div>
 
-## Robots
+# Robots
 
 Below is the list of items for one robot:
 
@@ -239,7 +239,7 @@ Below is the list of items for one robot:
     </tr>
 </table>
 
-## Setup
+# Monitoring system
 
 <table class="table table-striped table-responsive">
     <tr>
