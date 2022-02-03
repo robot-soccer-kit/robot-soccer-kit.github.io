@@ -322,7 +322,7 @@ Below is the list of items for one robot:
     </tr>
     <tr>
         <td>
-            <img src="/assets/imgs/field.png" width="128" /><br/>
+            <img src="/assets/imgs/pvc_tubes.png" width="128" /><br/>
         </td>
         <td>
             PVC tubes
@@ -336,6 +336,9 @@ Below is the list of items for one robot:
                 <li>3x T-shape connector</li>
                 <li>2x female-female extension connector</li>
             </ul>
+            <a href="https://cad.onshape.com/documents/9cc6b0daf9b557171e113c23/w/2f8478a1144ff882da321800/e/6a7d3327c83e310946f6c2d8?renderMode=0&uiState=61fbf48da6926b0dcb6fa21c">
+            See the suggested assembly (3D)
+            </a>
         </td>
     </tr>
 </table>

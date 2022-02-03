@@ -101,10 +101,26 @@ robot.control(0., 0., math.radians(30))
 You can also use the `goto` method to send the robot to an arbitrary position on the field:
 
 ```python
+# Sending a robot to x=0.2m, y=0.5m, theta=1.2 rad
 robot.goto((0.2, 0.5, 1.2))
 ```
 
 Sends the robot to the position `x=0.2`, `y=0.5` and `theta=1.2` on the field.
+
+### Non-blocking goto
+
+You can use the second argument of `goto` (which is `wait`, a *boolean* value) to tell goto not to
+block the execution of the program. This way, you can do something else at the same time without threading.
+Here is an example placing two robots:
+
+```python
+# Placing two robots, the loop will block until both robots are placed
+arrived = False
+while not arrived:
+    robot_1_arrived = client.green1.goto((0.2, 0.3, 0.), wait=False)
+    robot_2_arrived = client.green2.goto((0.2, -0.3, 0.), wait=False)
+    arrived = robot_1_arrived and robot_2_arrived
+```
 
 The second argument of `goto` is a *boolean* (`wait`, default `True`). When `wait` is `True`, the call to `goto` will
 block the execution of the program until the robot reaches its destination. When `wait` is `False`, the
