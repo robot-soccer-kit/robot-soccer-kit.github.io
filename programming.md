@@ -96,6 +96,20 @@ robot.control(0.25, 0., 0.)
 robot.control(0., 0., math.radians(30))
 ```
 
+### Handling errors
+
+If a command fails, a `rsk.ClientError` exception will be raised. You can catch it using:
+
+```python
+try:
+    robot.kick()
+    robot.control(0.1, 0, 0)
+except rsk.ClientError:
+    print('Error during a command!')
+```
+
+Such an exception will also happen if the robot you want to control was preempted by the Game Controller.
+
 ### Goto
 
 You can also use the `goto` method to send the robot to an arbitrary position on the field:
