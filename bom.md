@@ -108,17 +108,40 @@ Below is the list of items for one robot:
             <img src="/assets/imgs/wheel-parts.png" width="128" /><br/>
         </td>
         <td>
-            Wheel 3D parts
+            3D parts
         </td>
         <td>
-            3x 
-            <a href="https://cad.onshape.com/documents/beccbfab729802507eb805eb/w/eea13ac7371464cd172aefcf/e/76e58097a54be25b6c68caca?renderMode=0&uiState=616d8c2f00cc7207a3c8ae7b">3D printed parts</a>
-            <br/>
-            <small>
-                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/stack_collet_tied_export.stl">
-                (packed version for SLS)
+            Option 1, use FDM 3D printer:
+            <ul>
+                <li>
+                3x
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/coupler.stl">
+                    Coupler
                 </a>
-            </small>
+                </li>
+                <li>
+                6x
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/wheel.stl">
+                    Half-wheel
+                </a>
+                </li>
+                <li>
+                3x
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/motorbox_top.stl">
+                    Motorbox-top
+                </a>
+                </li>
+                <li>
+                3x
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/motorbox_bottom.stl">
+                    Motorbox-bottom
+                </a>
+                </li>
+            </ul>
+            Option 2, print 
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/stack.stl">
+            this pack using SLS
+            </a>
         </td>
     </tr>
     <tr>
@@ -199,6 +222,29 @@ Below is the list of items for one robot:
         </td>
         <td>
             A small plunger that can be sourced from many online. Used to kick the ball.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="/assets/imgs/kicker_tip.png" width="128" /><br/>
+        </td>
+        <td>
+            Robot kicker tip
+        </td>
+        <td>
+        Can be cut using laser cutter out of MDF or PMMA:
+            <ul>
+                <li>
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_1.dxf">
+                Part 1 (front)
+                </a>
+                </li>
+                <li>
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_2.dxf">
+                Part 2 (bottom)
+                </a>
+                </li>
+            </ul>
         </td>
     </tr>
     <tr>
