@@ -1,8 +1,8 @@
 ---
-title: Bill of materials
+title: Robots
 layout: default
 mathjax: true
-permalink: /bom
+permalink: /hardware-robots
 ---
 
 <div class="alert alert-danger">
@@ -10,9 +10,14 @@ permalink: /bom
     evolving, do not try to build this for now
 </div>
 
-# Robots
+<div class="alert alert-secondary text-center">
+    <img src="/assets/imgs/onshape.png" width="32"/>
+    <a href="https://cad.onshape.com/documents/c5fe05581d14c59bfb08f79e/w/a8cb82e3a358c0b06e1cbf91/e/f45372d8263c18466905bd9b?renderMode=0&uiState=616d8b41f463de7ef1eedc0f">
+        See the full robot 3D assembly (OnShape)
+    </a>
+</div>
 
-Below is the list of items for one robot:
+# Structure
 
 <table class="table table-striped table-responsive">
     <tr>
@@ -26,6 +31,30 @@ Below is the list of items for one robot:
         Comment
         </th>
     </tr>
+        <tr>
+        <td>
+            <img src="/assets/imgs/frame.png" width="128" /><br/>
+        </td>
+        <td>
+            Robot frame
+        </td>
+        <td>
+            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/frame.dxf">robot frame</a> can be cut in 3mm MDF or PMMA
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="/assets/imgs/marker.png" width="128" /><br/>
+        </td>
+        <td>
+            Marker
+        </td>
+        <td>
+            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/marker.dxf">marker part</a> can be cut in 3mm MDF or PMMA
+            <br/>
+            Then, print the relevant <a href="/coordinates-field-markers#robots">robot markers</a> and stick them on it.
+        </td>
+    </tr>
     <tr>
         <td>
             <img src="/assets/imgs/pcb.png" width="128" /><br/>
@@ -34,7 +63,7 @@ Below is the list of items for one robot:
             Mainboard
         </td>
         <td>
-            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/tree/master/electronics">
+            <a href="/electronics">
             Mainboard assembled PCB
             </a>
         </td>
@@ -48,16 +77,18 @@ Below is the list of items for one robot:
         </td>
         <td>
             <ul>
-                <li>6x M3x35</li>
-                <li>6x M3x10 female-female spacer</li>
-                <li>6x M3x8 female-male spacer</li>
-                <li>6x M3x15 female-male spacer</li>
+                <li>6x M3x30</li>
+                <li>6x M3x6 female-male spacer</li>
+                <li>6x M3x20 female-male spacer</li>
                 <li>12x M3 nuts</li>
             </ul>
-            Here, M3 nuts are used on the top of M3x15 spacers so that the spacer is both longer and doesn't
-            damage the marker sheet after getting through the 3mm of that part.
         </td>
     </tr>
+</table>
+
+# Motors and wheels
+
+<table class="table table-striped table-responsive">
     <tr>
         <td>
             <img src="/assets/imgs/n20.png" width="128" /><br/>
@@ -94,51 +125,40 @@ Below is the list of items for one robot:
     </tr>
     <tr>
         <td>
-            <img src="/assets/imgs/hc-05.png" width="128" /><br/>
-        </td>
-        <td>
-            <kbd>HC-05</kbd>
-        </td>
-        <td>
-            HC-05 modules are soldered on the robot PCB and allowing Bluetooth to on-board UART communication.
-        </td>
-    </tr>
-    <tr>
-        <td>
             <img src="/assets/imgs/wheel-parts.png" width="128" /><br/>
         </td>
         <td>
             3D parts
         </td>
         <td>
-            Option 1, use FDM 3D printer:
+            <b>Option 1</b>, use FDM 3D printer and print the following:
             <ul>
                 <li>
                 3x
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/coupler.stl">
-                    Coupler
+                    Coupler (coupler.stl)
                 </a>
                 </li>
                 <li>
                 6x
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/wheel.stl">
-                    Half-wheel
+                    Half-wheel (wheel.stl)
                 </a>
                 </li>
                 <li>
                 3x
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/motorbox_top.stl">
-                    Motorbox-top
+                    Motorbox-top (motorbox_top.stl)
                 </a>
                 </li>
                 <li>
                 3x
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/motorbox_bottom.stl">
-                    Motorbox-bottom
+                    Motorbox-bottom (motorbox_bottom.stl)
                 </a>
                 </li>
             </ul>
-            Option 2, print 
+            <b>Option 2</b>, print 
             <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/stack.stl">
             this pack using SLS
             </a>
@@ -159,6 +179,7 @@ Below is the list of items for one robot:
                 <li>9x M3 square nuts</li>
                 <li>60x M3x6 cylindrical shaft</li>
             </ul>
+            <a href="https://cad.onshape.com/documents/beccbfab729802507eb805eb/w/cfcb9ed7f156d2b4ab0a6a83/e/76e58097a54be25b6c68caca?explodedView=MKC8py8%2FfMHkcshYX&renderMode=0&rightPanel=explodedViewPanel&uiState=620185090f3755693d197f24">See the 3D view</a>
         </td>
     </tr>
     <tr>
@@ -186,30 +207,11 @@ Below is the list of items for one robot:
             60x O-ring for passive wheels
         </td>
     </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/frame.png" width="128" /><br/>
-        </td>
-        <td>
-            Robot frame
-        </td>
-        <td>
-            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/frame.dxf">robot frame</a> can be cut in 3mm MDF or PMMA
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/marker.png" width="128" /><br/>
-        </td>
-        <td>
-            Marker
-        </td>
-        <td>
-            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/marker.dxf">marker part</a> can be cut in 3mm MDF or PMMA
-            <br/>
-            Then, print the relevant <a href="/coordinates-field-markers#robots">robot markers</a> and stick them on it.
-        </td>
-    </tr>
+</table>
+
+# Kicker
+
+<table class="table table-striped table-responsive">
     <tr>
         <td>
             <img src="/assets/imgs/solenoid.png" width="128" /><br/>
@@ -236,12 +238,12 @@ Below is the list of items for one robot:
             <ul>
                 <li>
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_1.dxf">
-                Part 1 (front)
+                Front (kicker_tip_1.dxf)
                 </a>
                 </li>
                 <li>
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_2.dxf">
-                Part 2 (bottom)
+                Bottom (kicker_tip_2.dxf)
                 </a>
                 </li>
             </ul>
@@ -261,6 +263,11 @@ Below is the list of items for one robot:
             </ul>
         </td>
     </tr>
+</table>
+
+# Powering
+
+<table class="table table-striped table-responsive">
     <tr>
         <td>
             <img src="/assets/imgs/18650.png" width="128" /><br/>
@@ -281,110 +288,6 @@ Below is the list of items for one robot:
         </td>
         <td>
             Holder for 2 18650 batteries with jack output
-        </td>
-    </tr>
-</table>
-
-# Monitoring system
-
-<table class="table table-striped table-responsive">
-    <tr>
-        <th>
-        Part
-        </th>
-        <th style="min-width:25%">
-        Reference
-        </th>
-        <th>
-        Comment
-        </th>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/field.png" width="128" /><br/>
-        </td>
-        <td>
-            Field
-        </td>
-        <td>
-            <span class="text-danger">It must be made of a thick carpet, so that the ball is stopped enough.
-            Else, the game experience will be very poor.</span>
-            <br/>
-            You can buy a thick green carpet of 2x2.5m, paint it, and print and stick
-            <a href="/coordinates-field-markers">field markers</a>.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/spedal.png" width="128" /><br/>
-        </td>
-        <td>
-            <kbd>Spedal MF920Pro</kbd>
-            <br/>
-            <code>
-            1080p<br/>
-            30fps<br/>
-            120° angle
-            </code>
-        </td>
-        <td>
-            You can source other cameras, but the opening angle should be wide enough to see the whole field
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/balls.png" width="128" /><br/>
-        </td>
-        <td>
-            PU Orange ball
-        </td>
-        <td>
-            Those are golf-size balls made of some foam material called PU. It weights around 8g.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/zexmte.png" width="128" /><br/>
-        </td>
-        <td>
-            ZEXMTE Bluetooth adapter
-        </td>
-        <td>
-            You can give a try to your computer integrated Bluetooth, but there are chances that the quality
-            of communication will not be good enough. This dongle was tested to work well with the kit.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/extension.png" width="128" /><br/>
-        </td>
-        <td>
-            3m USB extension
-        </td>
-        <td>
-            The camera will be attached to the field structure, so you need an extension cable to connect it
-            to your computer. 3m is a good length.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/imgs/pvc_tubes.png" width="128" /><br/>
-        </td>
-        <td>
-            PVC tubes
-        </td>
-        <td>
-            For the field structure, you can use PVC tubes, we recommend (all 50mm diameter):
-            <ul>
-                <li>2x 50cm tube</li>
-                <li>6x 100cm tube</li>
-                <li>5x L-shape connector</li>
-                <li>3x T-shape connector</li>
-                <li>2x female-female extension connector</li>
-            </ul>
-            <a href="https://cad.onshape.com/documents/9cc6b0daf9b557171e113c23/w/2f8478a1144ff882da321800/e/6a7d3327c83e310946f6c2d8?renderMode=0&uiState=61fbf48da6926b0dcb6fa21c">
-            See the suggested assembly (3D)
-            </a>
         </td>
     </tr>
 </table>

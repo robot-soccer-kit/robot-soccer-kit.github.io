@@ -10,11 +10,14 @@
 
 body {
     background-image:url('/assets/imgs/texture.png');
+    background-attachment: fixed;
     text-align: justify;
 }
 
 .body-container {
     background-color:white;
+    border-left:2px solid #eee;
+    border-right:2px solid #eee;
 }
 
 nav.navbar {
