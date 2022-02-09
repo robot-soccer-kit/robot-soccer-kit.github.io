@@ -101,6 +101,7 @@ permalink: /hardware-robots
             <kbd>GA12-N20</kbd>
             <br/>
             <small><code>
+            rated 6V<br/>
             1:210 reduction<br/>
             Hall encoders (7 CPR)<br/>
             6p JST-ZH connector
