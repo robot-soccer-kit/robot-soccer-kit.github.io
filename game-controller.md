@@ -5,6 +5,17 @@ mathjax: true
 permalink: /game-controller
 ---
 
+<div class="text-center">
+    <a class="btn btn-secondary" href="/install-windows">
+        <img src="/assets/imgs/win.png" width="24" />
+        Install (Windows) &raquo;
+    </a>
+    <a class="btn btn-secondary" href="/install-linux">
+        <img src="/assets/imgs/linux.png" width="24" />
+        Install (Linux) &raquo;
+    </a>
+</div>
+
 ## Starting
 
 Once you've installed the Python package, paired the robots and the camera, you can start the game controller. You

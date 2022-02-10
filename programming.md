@@ -5,6 +5,17 @@ mathjax: true
 permalink: /programming
 ---
 
+<div class="text-center">
+    <a class="btn btn-secondary" href="/install-windows">
+        <img src="/assets/imgs/win.png" width="24" />
+        Install (Windows) &raquo;
+    </a>
+    <a class="btn btn-secondary" href="/install-linux">
+        <img src="/assets/imgs/linux.png" width="24" />
+        Install (Linux) &raquo;
+    </a>
+</div>
+
 ## Getting started
 
 Here is simple example creating a client for the API and getting the robot green1 kicking:
