@@ -159,3 +159,19 @@ The second argument of `goto` is a *boolean* (`wait`, default `True`). When `wai
 block the execution of the program until the robot reaches its destination. When `wait` is `False`, the
 `goto` call will return immediately, after updating the instant velocity of the controlled robot, and return
 `True` if the robot reached, `False` else.
+
+## Use `on_update` callback
+
+If you want to run some code everytime new information is obtained from the detection, you can register
+a method with the `on_update` field in `client`:
+
+```python
+def print_the_ball(client, dt):
+    print(client.ball)
+
+# This will print the ball everytime a new information is obtained from the client
+client.on_update = print_the_ball
+```
+
+This can be convenient if you want to log data for further analysis, because you will log all information exactly
+once, and once it is received.
