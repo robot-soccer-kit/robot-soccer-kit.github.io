@@ -140,31 +140,31 @@ permalink: /hardware-robots
             <ul>
                 <li>
                 3x
-                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/coupler.stl">
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/coupler.stl">
                     Coupler (coupler.stl)
                 </a>
                 </li>
                 <li>
                 6x
-                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/wheel.stl">
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/wheel.stl">
                     Half-wheel (wheel.stl)
                 </a>
                 </li>
                 <li>
                 3x
-                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/motorbox_top.stl">
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/motorbox_top.stl">
                     Motorbox-top (motorbox_top.stl)
                 </a>
                 </li>
                 <li>
                 3x
-                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/motorbox_bottom.stl">
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/motorbox_bottom.stl">
                     Motorbox-bottom (motorbox_bottom.stl)
                 </a>
                 </li>
             </ul>
             <b>Option 2</b>, print 
-            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/stack.stl">
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/stack.stl">
             this pack using SLS
             </a>
         </td>
