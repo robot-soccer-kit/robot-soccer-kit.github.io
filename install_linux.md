@@ -43,13 +43,24 @@ We provide some scripts in [the repository](https://github.com/robot-soccer-kit/
 
 ### Installing RTL drivers
 
-We recommend using USB external [ZEXMTE Bluetooth adapter](https://www.amazon.fr/gp/product/B08SC9M9K3/). On Linux,
-it required you to install RTL driver:
+We recommend using USB external [ZEXMTE Bluetooth adapter](https://www.amazon.fr/gp/product/B08SC9M9K3/).
+
+You need at least the 5.8.0 kernel.
+On Linux, it required you to install RTL driver:
 
 ```bash
 # Requires root privilege
 ./bluetooth/install-rtl-driver.sh
 ```
+### Give users the rights to access
+
+Run:
+
+```
+sudo adduser $USER dialout
+```
+
+Then, log out and log in again
 
 ### Pairing process
 
