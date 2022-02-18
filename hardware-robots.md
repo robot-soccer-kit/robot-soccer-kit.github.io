@@ -263,7 +263,8 @@ permalink: /hardware-robots
         </td>
         <td>
             <ul>
-                <li>2x M3x5 screws</li>
+                <li>2x M3x4 screws</li>
+                <li>2x M3 lockwasher</li>
                 <li>2x M3 square nuts DIN 562</li>
             </ul>
         </td>
