@@ -87,24 +87,26 @@ The field frame is detailed in the [coordinates and markers](/coordinates-field-
 
 Note: arrays are *numpy array*
 
-## Accessing static dimensions
+## Accessing constants
 
-The following constants are available:
+The module `rsk.constants` provide some useful constants (field dimensions, rules limitations etc.):
 
 ```python
-from rsk import field_dimensions
+from rsk import constants
 
 # Field length (x axis)
-field_dimensions.length
+constants.field_length
 # Field width (y axis)
-field_dimensions.width
+constants.field_width
 
 # Goal width
-field_dimensions.goal_width
+constants.goal_width
 
 # Side of the (green) border we should be able to see around the field
-field_dimensions.border_size
+constants.border_size
 ```
+
+See more constants in the [source file](https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/rsk/constants.py).
 
 ## Controlling the robots
 
