@@ -8,7 +8,11 @@ permalink: /coordinates-field-markers
 ## PDFs
 
 * [Full field (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field.pdf)
-* [Field corner markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-markers.pdf)
+* Field markers:
+    * [Marker 1 (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-marker-1.pdf)
+    * [Marker 2 (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-marker-2.pdf)
+    * [Marker 3 (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-marker-3.pdf)
+    * [Marker 4 (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field-marker-4.pdf)
 * [Green team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/green-markers.pdf)
 * [Blue team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/blue-markers.pdf)
 
@@ -17,7 +21,7 @@ permalink: /coordinates-field-markers
 The field coordinates are the following:
 
 <div class="text-center">
-    <img src="/assets/imgs/field-frame.png" />
+    <img width="350" src="/assets/imgs/field-frame.svg" />
 </div>
 
 The frame's origin is the middle of the field, and robots orientation are angle formed by
@@ -31,13 +35,13 @@ You can print [green](https://raw.githubusercontent.com/robot-soccer-kit/robot-s
 place them on the robots:
 
 <div class="text-center">
-    <img src="/assets/imgs/robots-markers-explain.png" />
+    <img width="350" class="responsive" src="/assets/imgs/robot-markers-explain.svg" />
 </div>
 
 ## Markers
 
 Markers are ArUco 4x4, you can use tool like [this one](https://chev.me/arucogen/), printed with a scale
-of 8 cm. The PDF provided previously are 1:1 scale. The ArUco ids are:
+of of 8 cm for the robots and 16cm for field corners. The PDF provided previously are 1:1 scale. The ArUco ids are:
 
 * `0`: field corner 1
 * `1`: field corner 2
