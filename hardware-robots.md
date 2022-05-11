@@ -220,7 +220,7 @@ permalink: /hardware-robots
             </code>
         </td>
         <td>
-            60x O-ring for passive wheels
+            60x O-ring for passive wheels, those are optional (without them it works as well)
         </td>
     </tr>
 </table>
