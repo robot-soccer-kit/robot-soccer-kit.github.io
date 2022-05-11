@@ -83,6 +83,7 @@ permalink: /hardware-robots
             <ul>
                 <li>6x M3x30</li>
                 <li>6x M3x6 female-male spacer</li>
+                <li>10x M3x30 female-male spacer</li>
                 <li>6x M3x20 female-male spacer</li>
                 <li>12x M3 nuts</li>
             </ul>
@@ -130,6 +131,18 @@ permalink: /hardware-robots
     </tr>
     <tr>
         <td>
+            <img src="/assets/imgs/coupler.png" width="128" /><br/>
+        </td>
+        <td>
+            Motor couplers
+        </td>
+        <td>
+            Those couplers have internal diameter of 3mm, the small part of the ring is 10mm, the
+            big part is ~22mm and the screw spacing is 16mm.
+        </td>
+    </tr>
+    <tr>
+        <td>
             <img src="/assets/imgs/wheel-parts.png" width="128" /><br/>
         </td>
         <td>
@@ -140,14 +153,14 @@ permalink: /hardware-robots
             <ul>
                 <li>
                 3x
-                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/coupler.stl">
-                    Coupler (coupler.stl)
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/wheel1.stl">
+                    Half-wheel part1 (wheel1.stl)
                 </a>
                 </li>
                 <li>
-                6x
-                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/wheel.stl">
-                    Half-wheel (wheel.stl)
+                3x
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/wheel2.stl">
+                    Half-wheel part2 (wheel2.stl)
                 </a>
                 </li>
                 <li>
@@ -178,10 +191,8 @@ permalink: /hardware-robots
         </td>
         <td>
             <ul>
-                <li>18x M3x8 screws</li>
-                <li>18x M3 nuts</li>
-                <li>9x M3x8 screws</li>
-                <li>9x M3 square nuts</li>
+                <li>30x M3x8 screws</li>
+                <li>30x M3 nuts</li>
                 <li>60x M3x6 cylindrical shaft</li>
             </ul>
             <a href="https://cad.onshape.com/documents/beccbfab729802507eb805eb/w/cfcb9ed7f156d2b4ab0a6a83/e/76e58097a54be25b6c68caca?explodedView=MKC8py8%2FfMHkcshYX&renderMode=0&rightPanel=explodedViewPanel&uiState=620185090f3755693d197f24">See the 3D view</a>
