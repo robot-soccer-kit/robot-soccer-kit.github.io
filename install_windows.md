@@ -9,21 +9,23 @@ permalink: /install-windows/
 
 You need to have Python version 3.8 or newer.
 
-* You can install Python from the Windows Store
+* You can install Python from the [Windows Store](https://apps.microsoft.com/store/detail/python-39/9P7QFQMJRFP7?hl=fr-fr&gl=FR)
 * Or download the [installer for Python 3.9](https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe)
 
-## Installing `robot-soccer-kit` package
+## Installing/Updating `robot-soccer-kit` package
+
+*Note: If `python` command is not working, use `py` instead*
 
 If you want to install only the client, run:
 
 ```bash
-py -m pip install -U robot-soccer-kit
+python -m pip install -U robot-soccer-kit
 ```
 
 If you also want the game controller:
 
 ```bash
-py -m pip install -U robot-soccer-kit[gc]
+python -m pip install -U robot-soccer-kit[gc]
 ```
 
 ## Running the Game Controller
@@ -31,7 +33,7 @@ py -m pip install -U robot-soccer-kit[gc]
 To run the game controller: enter the following command:
 
 ```bash
-py -m rsk.game_controller
+python -m rsk.game_controller
 ```
 
 ## Pairing the robots
@@ -45,10 +47,14 @@ to disable it before using the USB dongle by going to "Devices Manager".
 To pair the robots, simply go to your Bluetooth menu and pair them one by one. If you encounter issues, do not hesitate
 to disable and re-enable your Bluetooth.
 
-*Note: default bluetooth PIN for robots is always 1234.*
+*Note: default Bluetooth PIN for robots is always 1234. (No PIN is required for robots named "RSK")*
 
-*Note 2: You will NOT have to pair the robots again after each restart of your computer, only if you bring in new
-robots.*
+*Note 2: You will NOT have to pair the robots again after each restart of your computer, only if you bring in new robots.*
+
+### Step-by-step pairing
+
+Click on 
+
 
 ## Camera
 
