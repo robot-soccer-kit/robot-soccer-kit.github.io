@@ -44,17 +44,64 @@ the drivers are automatically installed from internet.
 If you already have native Bluetooth on your computer, you can give it a try. If it doesn't work well, don't forget
 to disable it before using the USB dongle by going to "Devices Manager".
 
+<div class="container text-center">
+    <button class="btn btn-secondary text-center" type="button" data-bs-toggle="collapse" data-bs-target="#SbS_BL" aria-expanded="false" aria-controls="SbS_BL">
+    Step-by-step - Disable intern Bluetooth
+    </button>
+</div>
+
+<div class="collapse" id="SbS_BL">
+    <div class="row text-center justify-content-center">
+        <div class="col-6">
+            <b>Step 1</b>
+            <img class="w-100" src="/assets/imgs/BL-0.jpg" />
+        </div>
+        <div class="col-6">
+            <b>Step 2</b>
+            <img class="w-100" src="/assets/imgs/BL-1.jpg"/>
+        </div>
+    </div>
+</div>
+
 To pair the robots, simply go to your Bluetooth menu and pair them one by one. If you encounter issues, do not hesitate
 to disable and re-enable your Bluetooth.
 
-*Note: default Bluetooth PIN for robots is always 1234. (No PIN is required for robots named "RSK")*
+*Note: If a Bluetooth PIN is asked it is always 1234. (No PIN is required for robots named "RSK_XX")*
 
 *Note 2: You will NOT have to pair the robots again after each restart of your computer, only if you bring in new robots.*
 
-### Step-by-step pairing
+<div class="container text-center">
+    <button class="btn btn-secondary text-center" type="button" data-bs-toggle="collapse" data-bs-target="#SbS_Pairing" aria-expanded="false" aria-controls="SbS_Pairing">
+    Step-by-step - Robots Pairing
+    </button>
+</div>
 
-Click on 
-
+<div class="collapse" id="SbS_Pairing">
+    <div class="row text-center justify-content-center">
+        <div class="col-6">
+            <b>Step 1</b>
+            <img class="w-100" src="/assets/imgs/Pair-0.jpg" />
+        </div>
+        <div class="col-6">
+            <b>Step 2</b>
+            <img class="w-100" src="/assets/imgs/Pair-1.jpg" />
+        </div>
+    </div>
+    <div class="row text-center justify-content-center">
+        <div class="col-4">
+            <b>Step 3</b>
+            <img class="w-100" src="/assets/imgs/Pair-2.jpg" />
+        </div>
+        <div class="col-4">
+            <b>Step 4</b>
+            <img class="w-100" src="/assets/imgs/Pair-3.jpg" />
+        </div>
+        <div class="col-4">
+            <b>Step 5</b>
+            <img class="w-100" src="/assets/imgs/Pair-4.jpg" />
+        </div>
+    </div>
+</div>
 
 ## Camera
 
