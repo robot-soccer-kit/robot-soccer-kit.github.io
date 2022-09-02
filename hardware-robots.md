@@ -192,8 +192,7 @@ permalink: /hardware-robots
         </td>
         <td>
             <ul>
-                <li>18x M3x8 screws (to assemble wheels)</li>
-                <li>12x M3x10 screws (for couplers)</li>
+                <li>30x M3x8 screws</li>
                 <li>30x M3 nuts</li>
                 <li>60x M3x6 cylindrical shaft</li>
             </ul>
