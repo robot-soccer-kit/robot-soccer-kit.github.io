@@ -83,7 +83,7 @@ permalink: /hardware-robots
             <ul>
                 <li>6x M3x30</li>
                 <li>10x M3x8</li>
-                <li>6x M3x6 female-male spacer</li>
+                <li>6x M3x8 female-male spacer</li>
                 <li>10x M3x30 female-male spacer</li>
                 <li>6x M3x20 female-male spacer</li>
                 <li>12x M3 nuts</li>
