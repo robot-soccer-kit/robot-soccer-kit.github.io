@@ -69,7 +69,7 @@ permalink: /hardware-robots
         <td>
             <ul>
             <li><a href="/electronics">Mainboard assembled PCB</a></li>
-            <li><a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/electronics/BOM.xlsx">Component BOM</a></li>
+            <li><a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/electronics/rev2/BOM.xlsx">Component BOM</a></li>
             <li><a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/electronics/rev2/rsk-rev2.zip">Gerber files</a></li>
             <li><a href="https://github.com/robot-soccer-kit/robot-soccer-kit/tree/master/electronics/rev2">Eagle files</a></li>
             </ul>
