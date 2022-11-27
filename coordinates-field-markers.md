@@ -5,7 +5,12 @@ mathjax: true
 permalink: /coordinates-field-markers
 ---
 
-## PDFs
+The whole scene is tracked by a **camera** in order to provide a localization for the robots and the ball.
+We use visual codes named *ArUco* as fiducial markers to detect the corner of the fields and the robots.
+
+The ball is detected using its color (orange).
+
+## Markers PDFs
 
 * [Full field (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/field.pdf)
 * Field markers:
@@ -16,18 +21,34 @@ permalink: /coordinates-field-markers
 * [Green team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/green-markers.pdf)
 * [Blue team markers (PDF)](https://raw.githubusercontent.com/robot-soccer-kit/robot-soccer-kit/master/docs/blue-markers.pdf)
 
-## Coordinates
+## Field dimensions
 
-The field coordinates are the following:
+Here are the main field dimensions:
 
 <div class="text-center">
-    <img width="350" src="/assets/imgs/field-frame.svg" />
+    <img width="550" src="/assets/imgs/dimensions.png" />
 </div>
 
-The frame's origin is the middle of the field, and robots orientation are angle formed by
-field x axis and front of the robot.
+If you want to deploy the kit, we recommend a floor footprint of about *2.5m x 2.5m*. Indeed, you need some extra
+space around the field to deploy the structure for hold the camera.
 
-Roughly, the coordinates of the blue robot above will look like *(x=0.4, y=0.4, alpha=45 deg)*.
+## Coordinates system
+
+The field coordinates used in the software are the following:
+
+<div class="text-center mb-2">
+    <img width="450" src="/assets/imgs/field-frame.svg" />
+</div>
+
+* The frame's origin is the middle of the field, and robots orientation are angle formed by
+field x axis and front of the robot.
+* We use [international system units](https://en.wikipedia.org/wiki/International_System_of_Units),
+distances are then expressed in meters and orientations in radians.
+
+<div class="alert alert-info">
+    Roughly, the coordinates of the blue robot above will look like 
+    <code>(x=0.4 m, y=0.4 m, alpha=pi/4 rad)</code>.
+</div>
 
 ## Robots
 
@@ -35,7 +56,7 @@ You can print [green](https://raw.githubusercontent.com/robot-soccer-kit/robot-s
 place them on the robots:
 
 <div class="text-center">
-    <img width="350" class="responsive" src="/assets/imgs/robot-markers-explain.svg" />
+    <img width="350" class="responsive" src="/assets/imgs/robot-markers-explain.png" />
 </div>
 
 ## Markers
