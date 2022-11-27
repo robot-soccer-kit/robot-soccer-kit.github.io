@@ -11,7 +11,7 @@ permalink: /hardware-robots
 </div>
 
 <div class="text-center mb-2">
-    <img src="/assets/imgs/robots.jpg" class="img-fluid" />
+    <img src="/assets/imgs/robot_onshape.png" width="300" />
 </div>
 
 <div class="alert alert-secondary text-center">
@@ -43,7 +43,14 @@ permalink: /hardware-robots
             Robot frame
         </td>
         <td>
-            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/frame.dxf">robot frame</a> can be cut in 3mm MDF or PMMA
+            The robot frame can be cut in 3mm MDF or PMMA
+            <ul>
+            <li>
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/frame.dxf">
+                <code>frame.dxf</code>
+            </a>
+            </li>
+            </ul>
         </td>
     </tr>
     <tr>
@@ -54,9 +61,21 @@ permalink: /hardware-robots
             Marker
         </td>
         <td>
-            The <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/marker.dxf">marker part</a> can be cut in 3mm MDF or PMMA
+            The marker part can be cut in 3mm MDF or PMMA
             <br/>
-            Then, print the relevant <a href="/coordinates-field-markers#robots">robot markers</a> and stick them on it.
+            Then, print the relevant robot markers and stick them on it.
+            <ul>
+            <li>
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/marker.dxf">
+                <code>marker.dxf</code>
+            </a>
+            </li>
+            <li>
+            <a href="/coordinates-field-markers#robots">
+                Robot markers
+            </a>
+            </li>
+            </ul>
         </td>
     </tr>
     <tr>
@@ -67,7 +86,9 @@ permalink: /hardware-robots
             Mainboard
         </td>
         <td>
-            <a href="/electronics">Mainboard assembled PCB, click here for more details</a>
+            Mainboard assembled PCB
+            <br/>
+            <a href="/electronics">Click here for more details on electronics</a>
         </td>
     </tr>
     <tr>
@@ -79,12 +100,22 @@ permalink: /hardware-robots
         </td>
         <td>
             <ul>
-                <li>6x M3x30</li>
-                <li>10x M3x8</li>
-                <li>6x M3x8 female-male spacer</li>
-                <li>10x M3x30 female-male spacer</li>
-                <li>6x M3x20 female-male spacer</li>
-                <li>12x M3 nuts</li>
+                <li>
+                    Those screws are used to fix the motors
+                    <ul>
+                        <li>6x M3x30</li>
+                        <li>6x M3x8 female-male spacer</li>
+                        <li>6x M3x20 female-male spacer</li>
+                        <li>12x M3 nuts</li>
+                    </ul>
+                </li>
+                <li>
+                    All around the board, we use spacers to protect the robot
+                    <ul>
+                        <li>10x M3x30 female-male spacer</li>
+                        <li>10x M3x8</li>
+                    </ul>
+                </li>
             </ul>
         </td>
     </tr>
@@ -253,12 +284,17 @@ permalink: /hardware-robots
             <ul>
                 <li>
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_1.dxf">
-                Front (kicker_tip_1.dxf)
+                <code>Front for laser (kicker_tip_1.dxf), requires engraving for the nut</code>
+                </a>
+                </li>
+                <li>
+                <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_1.step">
+                <code>Front for CNC (kicker_tip_1.step)</code>
                 </a>
                 </li>
                 <li>
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_2.dxf">
-                Bottom (kicker_tip_2.dxf)
+                <code>Bottom (kicker_tip_2.dxf)</code>
                 </a>
                 </li>
             </ul>
@@ -303,7 +339,7 @@ permalink: /hardware-robots
             2x18650 holder
         </td>
         <td>
-            Holder for 2 18650 batteries with jack output
+            Holder for 2x18650 batteries with jack 2.35mm output
         </td>
     </tr>
 </table>
