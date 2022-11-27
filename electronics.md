@@ -17,6 +17,7 @@ The robots board files can can be found on the [GitHub project](https://github.c
 
 ## Links
 
+* [Schematics](https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/electronics/schematics.pdf)
 * [Components (full BOM)](https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/electronics/rev2/BOM.xlsx)
 * [Gerber files](https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/electronics/rev2/rsk-rev2.zip)
 * [Eagle files](https://github.com/robot-soccer-kit/robot-soccer-kit/tree/master/electronics/rev2)
