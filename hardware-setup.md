@@ -88,23 +88,14 @@ Here is everything you will need to assemble the setup:
     </tr>
     <tr>
         <td>
-            <img src="/assets/imgs/pvc_tubes.png" width="128" /><br/>
+            <img src="/assets/imgs/background_stand.png" width="128" /><br/>
         </td>
         <td>
-            PVC tubes
+            Camera structure
         </td>
         <td>
-            For the field structure, you can use PVC tubes, we recommend (all 50mm diameter):
-            <ul>
-                <li>2x 50cm tube</li>
-                <li>6x 100cm tube</li>
-                <li>5x L-shape connector</li>
-                <li>3x T-shape connector</li>
-                <li>2x female-female extension connector</li>
-            </ul>
-            <a href="https://cad.onshape.com/documents/9cc6b0daf9b557171e113c23/w/2f8478a1144ff882da321800/e/6a7d3327c83e310946f6c2d8?renderMode=0&uiState=61fbf48da6926b0dcb6fa21c">
-            See the suggested assembly (3D)
-            </a>
+            For the camera structure, we recommend you using a photo background stand. They can
+            be found for around 40$ on Amazon.
         </td>
     </tr>
 </table>
