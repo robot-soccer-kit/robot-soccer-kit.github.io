@@ -5,11 +5,6 @@ mathjax: true
 permalink: /hardware-robots
 ---
 
-<div class="alert alert-danger">
-    Disclaimer: this is a WORK IN PROGRESS, not everything is yet well documented, and some parts are still
-    evolving, do not try to build this for now
-</div>
-
 <div class="text-center mb-2">
     <img src="/assets/imgs/robot_onshape.png" width="300" />
 </div>

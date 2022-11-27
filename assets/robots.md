@@ -6,10 +6,6 @@ mathjax: true
 
 # Robots
 
-**Disclaimer: robots used in Robot Soccer Kit are a fork of a previous project (holo). Current prototypes
-were hacked to add a kicker. In the future, this kicker will be integrated in the robot itself,
-this is STILL A WORK IN PROGRESS**
-
 ![Holo](/docs/imgs/robots.jpg)
 
 [The full robot CAD can be found here (OnShape)](https://cad.onshape.com/documents/c5fe05581d14c59bfb08f79e/w/a8cb82e3a358c0b06e1cbf91/e/f45372d8263c18466905bd9b?renderMode=0&uiState=616d8b41f463de7ef1eedc0f)
