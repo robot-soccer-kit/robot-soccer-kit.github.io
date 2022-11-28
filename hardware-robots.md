@@ -272,25 +272,28 @@ permalink: /hardware-robots
             <img src="/assets/imgs/kicker_tip.png" width="128" /><br/>
         </td>
         <td>
-            Robot kicker tip
+            Kicker tip
         </td>
         <td>
         Can be cut using laser cutter out of MDF or PMMA:
             <ul>
                 <li>
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_1.dxf">
-                <code>Front for laser (kicker_tip_1.dxf), requires engraving for the nut</code>
+                <code>kicker_tip_1.dxf</code>
                 </a>
+                : Front for laser, requires engraving for the nut
                 </li>
                 <li>
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_1.step">
-                <code>Front for CNC (kicker_tip_1.step)</code>
+                <code>kicker_tip_1.step</code>
                 </a>
+                : Front for CNC
                 </li>
                 <li>
                 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/raw/master/mechanics/kicker_tip_2.dxf">
-                <code>Bottom (kicker_tip_2.dxf)</code>
+                <code>kicker_tip_2.dxf</code>
                 </a>
+                : Bottom
                 </li>
             </ul>
         </td>
