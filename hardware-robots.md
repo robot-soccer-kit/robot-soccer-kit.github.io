@@ -6,7 +6,10 @@ permalink: /hardware-robots
 ---
 
 <div class="text-center mb-2">
-    <img src="/assets/imgs/robots.svg" width="700" />
+    <img src="/assets/imgs/robot_green1.svg" width="200" />
+    <img src="/assets/imgs/robot_green2.svg" width="200" />
+    <img src="/assets/imgs/robot_blue1.svg" width="200" />
+    <img src="/assets/imgs/robot_blue2.svg" width="200" />
 </div>
 
 <div class="alert alert-secondary text-center">
