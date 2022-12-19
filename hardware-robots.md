@@ -154,7 +154,8 @@ permalink: /hardware-robots
             Motor cables
         </td>
         <td>
-            3x JST-ZH cables, 6 pins, length: 5cm
+            3x JST-ZH cables (double ended, inversed), 6 pins, length: 5cm.
+            Possible reference: A06ZR06ZR28H51A.
         </td>
     </tr>
     <tr>
