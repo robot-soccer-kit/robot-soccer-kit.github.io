@@ -12,7 +12,22 @@ You need to have Python version 3.8 or newer.
 * You can install Python from the [Windows Store](https://apps.microsoft.com/store/detail/python-39/9P7QFQMJRFP7?hl=fr-fr&gl=FR)
 * Or download the [installer for Python 3.9](https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe)
 
-## Installing/Updating `robot-soccer-kit` package
+## Installing/Updating `robot-soccer-kit` package (Windows scripts)
+
+You can download the following repository:
+
+* [Download installer scripts (Getting started)](https://github.com/robot-soccer-kit/getting-started/archive/refs/tags/getting-started-v1.0.2.zip)
+
+Then, un-zip it, and run:
+
+* `install.bat` to start installing Python package (with Game Controller)
+* `install_client.bat` to start installing Python package (client only)
+* `game_controller.bat` to run the Game Controller
+
+## Installing/Updating `robot-soccer-kit` package (command lines)
+
+If you use the *Getting started* scripts, you can skip this section. Here are the command lines that are
+actually run by
 
 *Note: If `python` command is not working, use `py` instead*
 
