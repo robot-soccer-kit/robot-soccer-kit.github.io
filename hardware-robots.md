@@ -19,7 +19,7 @@ permalink: /hardware-robots
     </a>
 </div>
 <div class="text-center">
-    <a class="btn btn-secondary text-center" href="/install-linux">
+    <a class="btn btn-secondary text-center" href="/assembly">
         <i class="bi bi-book"></i> Assembly Instructions &raquo;
     </a>
 </div>
