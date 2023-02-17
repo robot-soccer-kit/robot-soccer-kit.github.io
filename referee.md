@@ -34,7 +34,7 @@ A global presentation of the different cases of what will be called "preemption"
 
 *When a robot is "penalized", it means that it is sent off the field, closest to where it committed the fault.*
 
-# Referee rules ![image](/assets/imgs/referee-dict.png "5s button"){: style="float: right; margin-left: 1em; width: 35%"}
+# Access to referee information ![image](/assets/imgs/referee-dict.png "5s button"){: style="float: right; margin-left: 1em; width: 35%"}
 
 
 All current match information is available in a "referee" dictionary which can be accessed directly from the client with the following command: client.referee
