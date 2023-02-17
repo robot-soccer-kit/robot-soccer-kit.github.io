@@ -15,10 +15,14 @@ permalink: /hardware-robots
 <div class="alert alert-secondary text-center">
     <img src="/assets/imgs/onshape.png" width="32"/>
     <a href="https://cad.onshape.com/documents/c5fe05581d14c59bfb08f79e/w/a8cb82e3a358c0b06e1cbf91/e/f45372d8263c18466905bd9b?renderMode=0&uiState=616d8b41f463de7ef1eedc0f">
-        See the full robot 3D assembly (OnShape)
+        Access the full robot 3D assembly (OnShape)
     </a>
 </div>
-
+<div class="text-center">
+    <a class="btn btn-secondary text-center" href="/install-linux">
+        <i class="bi bi-book"></i> Assembly Instructions &raquo;
+    </a>
+</div>
 # Structure
 
 <table class="table table-striped table-responsive">
