@@ -1,15 +1,23 @@
 ---
-title: Assembly
+title: Assembly instructions
 layout: default
 mathjax: true
 permalink: /assembly
 ---
 
-<div class="alert alert-danger">
+<!-- <div class="alert alert-danger">
     This part of the documentation is still incomplete.
-</div>
+</div> -->
 
-# Wheels assembly
+# Assembly Manual (French)
+
+<iframe src="/assets/RSK Manuel d'assemblage.pdf" width="100%" height="700px"> </iframe>
+
+# Assembly Manual (English)
+
+Coming soon...
+
+<!-- # Wheels assembly
 
 ## Step 1: fixing the coupler
 
@@ -38,4 +46,4 @@ Now, fix the other part of the wheel to the first part using the 6x M3x8 screws 
 
 <div class="alert alert-warning">
     Be sure to keep the notch indicated with orange circles on the above picture aligned together.
-</div>
+</div> -->

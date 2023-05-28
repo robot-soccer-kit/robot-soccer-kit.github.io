@@ -13,7 +13,7 @@ The robots board files can can be found on the [GitHub project](https://github.c
     you can skip this part.
 </div>
 
-<img src="/assets/imgs/pcb.png" width="150" style="float:right;z-index:1000000" />
+<img src="/assets/imgs/pcb.png" width="200" style="float:right;z-index:1000000" />
 
 ## Links
 

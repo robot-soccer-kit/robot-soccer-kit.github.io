@@ -9,8 +9,8 @@ permalink: /install-windows/
 
 You need to have Python version 3.8 or newer.
 
-* You can install Python from the [Windows Store](https://apps.microsoft.com/store/detail/python-39/9P7QFQMJRFP7?hl=fr-fr&gl=FR)
-* Or download the [installer for Python 3.9](https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe)
+* You can install Python from the [Windows Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5?hl=fr-fr&gl=fr)
+* Or download the [installer for Python 3.10](https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe)
 
 ## Installing/Updating `robot-soccer-kit` package (Windows scripts)
 
