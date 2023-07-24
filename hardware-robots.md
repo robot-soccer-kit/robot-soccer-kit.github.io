@@ -226,7 +226,7 @@ permalink: /hardware-robots
             <ul>
                 <li>30x M3x8 screws</li>
                 <li>30x M3 nuts</li>
-                <li>60x M3x6 cylindrical shaft</li>
+                <li>60x M3x6 cylindrical shaft DIN 7</li>
             </ul>
             <a href="https://cad.onshape.com/documents/beccbfab729802507eb805eb/w/cfcb9ed7f156d2b4ab0a6a83/e/76e58097a54be25b6c68caca?explodedView=MKC8py8%2FfMHkcshYX&renderMode=0&rightPanel=explodedViewPanel&uiState=620185090f3755693d197f24">See the 3D view</a>
         </td>
