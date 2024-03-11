@@ -26,7 +26,7 @@ A global presentation of the different cases of what will be called "preemption"
 
 1. If a robot enters the opponent's defense zone, it will be penalized for 5s in the same way as for the previous point. (**penalty-‘nomdurobot’ + abusive_attack**)
 
-1. If a robot stays more than 5s within a 25cm radius of the ball, then it will be penalized for 5s. (**penalty-‘nameofrobot’ + ball_abuse**)
+1. If a robot stays more than 3s within a 25cm radius of the ball, then it will be penalized for 5s. (**penalty-‘nameofrobot’ + ball_abuse**)
 
 1. If the referee operator judges that a robot should be penalized, he can manually penalize it by 5s or more by clicking one or more times on the ![5s button](/assets/imgs/5s.png "5s button") button of the corresponding robot. He can also unpenalize it by clicking on ![cancel button](/assets/imgs/cancel.png "cancel button") . (**penalty-‘nameofrobot’ + manually penalized**)
 
