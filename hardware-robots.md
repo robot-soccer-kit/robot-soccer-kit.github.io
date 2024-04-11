@@ -349,3 +349,22 @@ permalink: /hardware-robots
         </td>
     </tr>
 </table>
+
+# Quality of life
+
+<table class="table table-striped table-responsive">
+    <tr>
+        <td>
+            <img src="/assets/imgs/18650.png" width="128" /><br/>
+        </td>
+        <td>
+            Batteries blocker
+        </td>
+        <td>
+            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/blocker.stl">
+            Batteries blocker
+            </a>
+            This F-shaped blocked can be used to prevent the batteries from moving in the holder.
+        </td>
+    </tr>
+</table>
