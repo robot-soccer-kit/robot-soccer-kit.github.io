@@ -361,10 +361,14 @@ permalink: /hardware-robots
             Batteries blocker
         </td>
         <td>
-            <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/blocker.stl">
-            Batteries blocker
-            </a>
             This F-shaped blocked can be used to prevent the batteries from moving in the holder.
+            <li>
+                <ul>
+                    <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/mechanics/blocker.stl">
+                    blocker.stl
+                    </a>
+                </ul>
+            </li>
         </td>
     </tr>
 </table>
