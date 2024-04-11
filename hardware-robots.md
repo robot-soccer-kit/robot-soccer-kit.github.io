@@ -355,7 +355,7 @@ permalink: /hardware-robots
 <table class="table table-striped table-responsive">
     <tr>
         <td>
-            <img src="/assets/imgs/18650.png" width="128" /><br/>
+            <img src="/assets/imgs/f_blocker.png" width="128" /><br/>
         </td>
         <td>
             Batteries blocker
