@@ -5,10 +5,16 @@ mathjax: true
 permalink: /network
 ---
 
+# Switching to Bluetooth
+
+By default, with latest firmware version, the robots boot to WiFi.
+You can switch the Bluetooth by **rotating manually any wheel by more than one turn** (any direction), and this
+**before** the robot got any packet from WiFi.
+If it is added with a Game Controller, either stop the Game Controller or remove it from the list of rebots.
 
 # Addressing
 
-Communicating with the robots can be achieved using either Bluetooth or WiFi.
+When flashing the robots, a WiFi network configuration is set in the firmware.
 This can be configured in the [config.h](https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/firmware/src/config.h)
 file while building the firmware.
 
@@ -28,6 +34,7 @@ Here is the proposed network configuration when using only one router:
 <b>Note</b>: IP address of the robots are set in the
 <a href="https://github.com/robot-soccer-kit/robot-soccer-kit/blob/master/firmware/src/config.h">firmware</a>.
 They don't have to be the one specified above since the robots are auto-discovered by the Game Controller.
+SSID and password are also set in the firmware and should match the Robot Soccer Kit network router configuration.
 </div>
 
 <div class="alert alert-info">
