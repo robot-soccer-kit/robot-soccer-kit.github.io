@@ -135,7 +135,7 @@ permalink: /hardware-robots
             <br/>
             <small><code>
             rated 6V<br/>
-            1:210 reduction<br/>
+            1:100 reduction<br/>
             Hall encoders (7 CPR)<br/>
             6p JST-ZH connector
             </code></small>
