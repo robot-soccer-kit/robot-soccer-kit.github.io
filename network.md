@@ -20,6 +20,10 @@ file while building the firmware.
 
 Even if any network configuration could be used, we here propose a convention for everyone to follow.
 
+<div class="alert alert-info">
+The WiFi network must be 2.4Ghz
+</div>
+
 # Proposed network
 
 Here is the proposed network configuration when using only one router:
