@@ -45,6 +45,21 @@ detection.
 
 For good games quality, you should aim at reaching about 30 FPS for detection.
 
+### Custom focal
+
+The recommended camera has its focal set in the default software. To use another camera, you can estimate
+the focal length by using your camera in 1920x1080 resolution, facing a plane (e.g. the floor or a wall):
+
+$$
+f = \frac{l \times p}{d}
+$$
+
+Where:
+
+* $$p = \sqrt{1920^2 + 1080^2} \approx 2203$$ is the number of pixels on the diagonal of the image,
+* $$l$$ is the distance from the camera to the plane,
+* $$d$$ is the size of the image diagonal on the plane.
+
 ## Configuring robots
 
 First, add your COM ports in the manager and just wait to check if the robots are responding. When they do, they emit
