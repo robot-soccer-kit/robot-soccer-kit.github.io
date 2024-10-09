@@ -54,9 +54,6 @@ SSID and password are also set in the firmware and should match the Robot Soccer
 Although the Game Controller can use DHCP, it is recommended to set it to a static IP address to make it easier
 to connect to it.
 </li>
-<li>
-The 2.4Ghz WiFi network can be hidden.
-</li>
 </ul>
 </div>
 
