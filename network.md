@@ -19,17 +19,7 @@ This can be configured in the [config.h](https://github.com/robot-soccer-kit/rob
 file while building the firmware.
 
 The WiFi network **must be 2.4Ghz**.
-
 Even if any network configuration could be used, we here propose a convention for everyone to follow.
-By default, the game controller will use `192.168.100.0` as network, with the subnet mask  `255.255.255.0`.
-If you want to use another network/subnet, please provide them explicitly while running the game controller as follow:
-
-```bash
-# Providing explicit network and subnet
-python -m rsk.game_controller \
-       --wifi-network 192.168.1.0 \
-       --wifi-subnet 255.255.255.0
-```
 
 # Single WiFi network
 
