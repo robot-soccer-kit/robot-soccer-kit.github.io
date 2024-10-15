@@ -28,13 +28,13 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="411.18258"
-     inkscape:cy="368.04907"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="529.62296"
+     inkscape:cy="265.87214"
      inkscape:window-width="1920"
-     inkscape:window-height="1021"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-height="1046"
+     inkscape:window-x="3840"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -48886,5 +48886,27 @@
        id="image115471"
        x="-72.210663"
        y="61.960701" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.88228px;line-height:1.25;font-family:sans-serif;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.147058"
+       x="68.922966"
+       y="82.410622"
+       id="text2246-8-0-4-8-4"
+       transform="rotate(45.875257)"><tspan
+         sodipodi:role="line"
+         style="font-weight:normal;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.147058"
+         x="68.922966"
+         y="82.410622"
+         id="tspan94674-7-4-9-9-0">TCP, ports</tspan><tspan
+         sodipodi:role="line"
+         style="font-weight:normal;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.147058"
+         x="68.922966"
+         y="89.763474"
+         id="tspan127101">7557 &amp; 7558</tspan></text>
+    <path
+       style="fill:#ff6600;stroke:#ff6600;stroke-width:0.865;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.865, 0.865;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -41.040471,89.486244 23.987744,25.023546 22.1704089,23.12774"
+       id="path114321-1"
+       sodipodi:nodetypes="ccc" />
   </g>
 </svg>
