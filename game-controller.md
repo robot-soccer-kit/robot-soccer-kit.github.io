@@ -60,6 +60,8 @@ Where:
 * $$l$$ is the distance from the camera to the plane,
 * $$d$$ is the size of the image diagonal on the plane.
 
+Use our [focal value calculator](/fov) to estimate the focal value.
+
 ## Configuring robots
 
 First, add your COM ports in the manager and just wait to check if the robots are responding. When they do, they emit
