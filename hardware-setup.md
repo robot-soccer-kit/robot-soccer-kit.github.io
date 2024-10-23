@@ -49,7 +49,8 @@ Here is everything you will need to assemble the setup:
             The <kbd>Logilink UA0377</kbd> seems to be an equivalent reference.
         </td>
         <td>
-            You can source other cameras, but the opening angle should be wide enough to see the whole field
+            You can source other cameras, but the opening angle should be wide enough to see the whole field.
+            See the <a href="/fov">field of view calculator</a> page for more information.
         </td>
     </tr>
     <tr>

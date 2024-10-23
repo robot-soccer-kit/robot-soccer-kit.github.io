@@ -60,7 +60,7 @@ Where:
 * $$l$$ is the distance from the camera to the plane,
 * $$d$$ is the size of the image diagonal on the plane.
 
-Use our [focal value calculator](/fov) to estimate the focal value.
+Use our [field of view calculator](/fov) to estimate the focal value.
 
 ## Configuring robots
 
