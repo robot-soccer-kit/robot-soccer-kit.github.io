@@ -66,14 +66,15 @@ Here is everything you will need to assemble the setup:
     </tr>
     <tr>
         <td>
-            <img src="/assets/imgs/zexmte.png" width="128" /><br/>
+            <img src="/assets/imgs/archer_c6.jpg" width="128" /><br/>
         </td>
         <td>
-            ZEXMTE Bluetooth adapter
+            WiFi router
         </td>
         <td>
-            You can give a try to your computer integrated Bluetooth, but there are chances that the quality
-            of communication will not be good enough. This dongle was tested to work well with the kit.
+            Robots can be configured to join a WiFi network. We typically use TP-link Archer C6, but any
+            router should work. (Note: 2.4Ghz should be available for the robots, while 5Ghz can be used for
+            your computer).
         </td>
     </tr>
     <tr>
