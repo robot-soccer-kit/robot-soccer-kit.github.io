@@ -64,26 +64,6 @@ To run the game controller with the simulated environment: enter the following c
 python -m rsk.game_controller -s
 ```
 
-## Pairing the robots
-
-We recommend using USB external [ZEXMTE Bluetooth adapter](https://amzn.eu/d/7ykCiar). On Windows,
-the drivers are automatically installed from internet.
-
-If you already have native Bluetooth on your computer, you can give it a try. If it doesn't work well, don't forget
-to disable it before using the USB dongle by going to "Devices Manager".
-
-To pair the robots, simply go to your Bluetooth menu and pair them one by one. If you encounter issues, do not hesitate
-to disable and re-enable your Bluetooth.
-
-*Note: default Bluetooth PIN for robots is always 1234. (No PIN is required for robots named "RSK")*
-
-*Note 2: You will NOT have to pair the robots again after each restart of your computer, only if you bring in new robots.*
-
-### Step-by-step pairing
-
-Click on 
-
-
 ## Camera
 
 Simply plug the camera on your computer's USB, it should work natively.
